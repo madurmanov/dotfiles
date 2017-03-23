@@ -1,0 +1,32 @@
+[user]
+  name = Mikhail Durmanov
+  email = madurmanov@gmail.com
+[core]
+  autocrlf = false
+  safecrlf = true
+  editor = emacs
+  excludesfile = ~/.gitignore
+[push]
+  default = simple
+[alias]
+  sw = show
+  ss = status
+  dd = add
+  di = diff
+  br = branch
+  brd = branch -d
+  cm = commit
+  cmm = commit -m
+  cma = commit --amend -m
+  co = checkout
+  cob = checkout -b
+  mr = merge
+  ph = push
+  pl = pull
+  fe = fetch
+  sh = stash
+  shl = stash list
+  shd = stash drop
+  sha = stash apply
+  cp = cherry-pick
+  lg = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all

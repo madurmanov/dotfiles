@@ -1,0 +1,8 @@
+.DS_Store
+.emacs.desktop
+.emacs.desktop.lock
+.emacs.bookmarks
+.editorconfig
+node_modules/
+bower_components/
+npm-debug.log
