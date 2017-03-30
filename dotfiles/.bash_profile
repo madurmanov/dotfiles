@@ -5,9 +5,9 @@ fi
 DEFAULT_USER=`whoami`
 PROMPT_DIRTRIM=3
 
+export PATH="/usr/local/bin:$PATH"
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export PATH="/usr/local/bin:$PATH"
 export PS1="\033[34m\w\033[0m $ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -18,14 +18,14 @@ if [ -f /usr/local/share/gitprompt.sh ] ; then
   GIT_PROMPT_ONLY_IN_REPO=1
   GIT_PROMPT_THEME=Custom
   GIT_PROMPT_THEME_FILE=~/.gitprompt
-  . /usr/local/share/gitprompt.sh
+#  . /usr/local/share/gitprompt.sh
 fi
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 alias sbash="source ~/.bash_profile"
 alias c="clear"
-alias e="emacs -nw -Q"
+alias e="emacs -nw"
 alias l="ls -lhAF"
 alias d="cd"
 alias b="cd .."
