@@ -86,12 +86,14 @@ extract () {
   fi
 }
 
+alias gcl="git cl"
 alias gsw="git sw"
 alias gss="git ss"
 alias gdd="git dd"
 alias gdi="git di"
 alias gbr="git br"
 alias gbrd="git brd"
+alias gbl="git bl"
 alias gcm="git cm"
 alias gcmm="git cmm"
 alias gcma="git cma"
@@ -107,3 +109,5 @@ alias gshd="git shd"
 alias gsha="git sha"
 alias gcp="git cp"
 alias glg="git lg"
+alias gcc="git shortlog | grep -E '^[ ]+\w+' | wc -l"
+alias gccm="git shortlog | grep -E '^[^ ]'"

@@ -9,12 +9,14 @@
 [push]
   default = simple
 [alias]
+  cl = clone
   sw = show
   ss = status
   dd = add
   di = diff
   br = branch
   brd = branch -d
+  bl = blame
   cm = commit
   cmm = commit -m
   cma = commit --amend -m
