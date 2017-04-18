@@ -22,6 +22,7 @@
   cma = commit --amend -m
   co = checkout
   cob = checkout -b
+  rs = reset
   mr = merge
   ph = push
   pl = pull
