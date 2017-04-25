@@ -5,5 +5,3 @@ eval "$(curl -sL https://raw.githubusercontent.com/madurmanov/install/master/ins
 install_start
 install dotfiles $HOME
 install_complete
-
-exit 0
