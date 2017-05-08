@@ -18,7 +18,7 @@ if [ -f /usr/local/share/gitprompt.sh ] ; then
   GIT_PROMPT_ONLY_IN_REPO=1
   GIT_PROMPT_THEME=Custom
   GIT_PROMPT_THEME_FILE=~/.gitprompt
-#  . /usr/local/share/gitprompt.sh
+  . /usr/local/share/gitprompt.sh
 fi
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
