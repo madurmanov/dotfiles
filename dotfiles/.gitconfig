@@ -14,6 +14,7 @@
   ss = status
   dd = add
   di = diff
+  dic = diff --cached
   br = branch
   brd = branch -d
   bl = blame
