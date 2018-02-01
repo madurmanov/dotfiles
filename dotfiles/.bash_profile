@@ -85,6 +85,9 @@ extract () {
     echo "'$1' is not a valid file"
   fi
 }
+localeditorconfig () {
+  cp ~/.editorconfig .
+}
 
 alias gcl="git cl"
 alias gsw="git sw"
