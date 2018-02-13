@@ -3,6 +3,7 @@
 .emacs.desktop
 .emacs.desktop.lock
 .emacs.bookmarks
-node_modules/
-bower_components/
-npm-debug.log
+node_modules
+bower_components
+*.log
+package-lock.json
