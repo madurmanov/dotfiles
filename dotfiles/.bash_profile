@@ -45,8 +45,6 @@ alias opensoc="lsof -i"
 alias cleands="find . -type f -name '*.DS_Store' -ls -delete"
 alias finderShowHidden="defaults write com.apple.finder ShowAllFiles TRUE"
 alias finderHideHidden="defaults write com.apple.finder ShowAllFiles FALSE"
-alias menuBarShowAdobe="launchctl load -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist"
-alias menuBarHideAdobe="launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist"
 
 mkd () {
   mkdir -p "$1" && cd "$1"
@@ -84,9 +82,6 @@ extract () {
   else
     echo "'$1' is not a valid file"
   fi
-}
-localeditorconfig () {
-  cp ~/.editorconfig .
 }
 
 alias gcl="git cl"
