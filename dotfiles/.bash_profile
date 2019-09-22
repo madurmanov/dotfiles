@@ -49,12 +49,15 @@ alias finderHideHidden="defaults write com.apple.finder ShowAllFiles FALSE"
 mkd () {
   mkdir -p "$1" && cd "$1"
 }
+
 ql () {
   qlmanage -p "$1" >& /dev/null
 }
+
 ftb () {
   cat $1 | pbcopy
 }
+
 zipf () {
   local archive=$1
   local archive_length=${#archive}
@@ -63,6 +66,7 @@ zipf () {
   fi
   zip -r "$archive.zip" "$1"
 }
+
 extract () {
   if [ -f $1 ] ; then
     case $1 in
@@ -82,6 +86,12 @@ extract () {
   else
     echo "'$1' is not a valid file"
   fi
+}
+
+unode () {
+  sudo npm cache clean -f
+  sudo npm install -g n
+  sudo n stable
 }
 
 alias gcl="git cl"
