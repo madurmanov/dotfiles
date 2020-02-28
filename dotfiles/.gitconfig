@@ -25,7 +25,9 @@
   cob = checkout -b
   rs = reset
   mr = merge
+  rb = rebase
   ph = push
+  phf = push --force
   pl = pull
   fe = fetch
   sh = stash
