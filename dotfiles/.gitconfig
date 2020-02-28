@@ -33,4 +33,4 @@
   shd = stash drop
   sha = stash apply
   cp = cherry-pick
-  lg = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all
+  lg = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --abbrev-commit --date=relative
