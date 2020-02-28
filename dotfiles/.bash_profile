@@ -23,6 +23,15 @@ fi
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
+# Git branch bash completion
+if [ -f ~/.gitcompletion ] ; then
+  . ~/.gitcompletion
+
+  # Add git completion to aliases
+  __git_complete gco _git_checkout
+  __git_complete gbrd _git_branch
+fi
+
 alias sbash="source ~/.bash_profile"
 alias c="clear"
 alias e="emacs -nw"
