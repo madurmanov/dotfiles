@@ -9,30 +9,36 @@
 [push]
   default = simple
 [alias]
+  bd = git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
+  bl = blame
+  br = branch
+  brd = branch -d
   cl = clone
-  sw = show
-  ss = status
+  cm = commit
+  cma = commit --amend -m
+  cme = commit --amend --no-edit
+  cmm = commit -m
+  co = checkout
+  cob = checkout -b
+  cp = cherry-pick
   dd = add
   di = diff
   dic = diff --cached
-  br = branch
-  brd = branch -d
-  bl = blame
-  cm = commit
-  cmm = commit -m
-  cma = commit --amend -m
-  co = checkout
-  cob = checkout -b
-  rs = reset
+  fe = fetch
+  lg = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --abbrev-commit --date=relative
+  lga = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --abbrev-commit --date=relative --all
   mr = merge
-  rb = rebase
   ph = push
   phf = push --force
+  phu = push -u origin
   pl = pull
-  fe = fetch
+  rb = rebase
+  rbc = rebase --continue
+  rbi = rebase -i
+  rs = reset
   sh = stash
-  shl = stash list
-  shd = stash drop
   sha = stash apply
-  cp = cherry-pick
-  lg = log --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --abbrev-commit --date=relative
+  shd = stash drop
+  shl = stash list
+  ss = status
+  sw = show
