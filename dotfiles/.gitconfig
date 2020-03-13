@@ -9,15 +9,16 @@
 [push]
   default = simple
 [alias]
-  bd = git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
   bl = blame
   br = branch
   brd = branch -d
+  brdd = branch -D
+  brdf = git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
   cl = clone
   cm = commit
   cma = commit --amend -m
-  cme = commit --amend --no-edit
   cmm = commit -m
+  cmn = commit --amend --no-edit
   co = checkout
   cob = checkout -b
   cp = cherry-pick

@@ -103,17 +103,16 @@ unode () {
   sudo n stable
 }
 
-alias gbd="git bd"
 alias gbl="git bl"
 alias gbr="git br"
 alias gbrd="git brd"
-alias gcc="git shortlog | grep -E '^[ ]+\w+' | wc -l"
-alias gccm="git shortlog | grep -E '^[^ ]'"
+alias gbrdd="git brdd"
+alias gbrdf="git brdf"
 alias gcl="git cl"
 alias gcm="git cm"
 alias gcma="git cma"
-alias gcme="git cme"
 alias gcmm="git cmm"
+alias gcmn="git cmn"
 alias gco="git co"
 alias gcob="git cob"
 alias gcp="git cp"
@@ -138,3 +137,6 @@ alias gshd="git shd"
 alias gshl="git shl"
 alias gss="git ss"
 alias gsw="git sw"
+
+alias gcc="git shortlog | grep -E '^[ ]+\w+' | wc -l"
+alias gccm="git shortlog | grep -E '^[^ ]'"
