@@ -35,7 +35,7 @@ fi
 alias sbash="source ~/.bash_profile"
 alias c="clear"
 alias e="emacs -nw"
-alias l="ls -lhAF"
+alias l="ls -lhoAF"
 alias d="cd"
 alias b="cd .."
 alias t="touch"
