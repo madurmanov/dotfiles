@@ -13,7 +13,6 @@
   br = branch
   brd = branch -d
   brdd = branch -D
-  brdf = git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D
   cl = clone
   cm = commit
   cma = commit --amend -m
@@ -41,5 +40,6 @@
   sha = stash apply
   shd = stash drop
   shl = stash list
+  sl = shortlog
   ss = status
   sw = show
